@@ -1,0 +1,27 @@
+/*
+    Document   : ．guides/stages/span/main．css
+    Created on : 2014-08-20 05:40 AM
+    Author     : fmay
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+root {
+    display: block;
+}
+
+body {
+  font: 20px 'Verdana', cursive;
+}
+
+.verse {
+  font-size: 18px;  
+}
+
+.last-line {
+  margin-left: 10px;
+  font: 20px 'Dancing Script', cursive;
+}
+
+

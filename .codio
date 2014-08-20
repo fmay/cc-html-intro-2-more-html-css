@@ -1,0 +1,17 @@
+{
+// Configure your Run and Preview buttons here.
+
+	// Run button configuration
+  "commands": {
+    "Starting Out": "~/workspace/.guides/restore.sh 01-raw",
+    "Add Colors": "~/workspace/.guides/restore.sh 02-colors",
+    "Sizing": "~/workspace/.guides/restore.sh 03-sizing",
+    "Floating": "~/workspace/.guides/restore.sh 04-float",    
+    "Fixed Width": "~/workspace/.guides/restore.sh 05-fixwidth-inline"
+  },
+  
+	// Preview button configuration
+  "preview": {
+        "Preview": "https://{{domain}}/{{index}}"
+  }
+}

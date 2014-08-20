@@ -1,0 +1,38 @@
+/*
+    Document   : main．css
+    Created on : 2014-08-19 11:34 AM
+    Author     : fmay
+    Description:
+    Purpose of the stylesheet follows.
+*/
+
+
+body {
+  background-color: #ffffff;  
+}
+
+.main {
+  background-color: #dddddd;  
+}
+
+.menu {
+  background-color: #f48d8d;   
+}
+
+.header {
+  background-color: #7cafea;   
+}
+
+.content {
+  background-color: #8bd6a9;  
+}
+
+.sidebar {
+  background-color: #4baf73;   
+}
+
+.footer {
+  background-color: #b78366;   
+}
+
+
