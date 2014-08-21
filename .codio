@@ -6,7 +6,8 @@
     "Starting Out": "~/workspace/.guides/restore.sh 01-raw",
     "Add Colors": "~/workspace/.guides/restore.sh 02-colors",
     "Sizing": "~/workspace/.guides/restore.sh 03-sizing",
-    "Floating": "~/workspace/.guides/restore.sh 04-float",    
+    "Floating": "~/workspace/.guides/restore.sh 04-float",
+		"Float Play": "~/workspace/.guides/restore.sh 05-floatplay",    
     "Fixed Width": "~/workspace/.guides/restore.sh 05-fixwidth-inline"
   },
   

@@ -33,17 +33,17 @@ header {
 .content {
   background-color: #8bd6a9;
   width: 60%;
-  float: left;  
+  position:static;
 }
 
 .sidebar {
   background-color: #4baf73; 
-  width: 35%; 
-  float: right;
+  width: 40%; 
+  position:relative;
 }
 
 footer {
+  clear: both; 
   background-color: #b78366;   
   height: 80px;  
 }
-

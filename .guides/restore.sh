@@ -10,11 +10,11 @@ echo '-------------------------------------'
 echo -e "${red}Restoring your workspace${NC}"
 
 # Remove the entire contents of the root folder
-rm ~/workspace/index.html
-rm ~/workspace/main.css
+rm ~/workspace/index.html 2>/dev/null
+rm ~/workspace/main.css 2>/dev/null
 
 # Copy the example folder to the root
-cp -r ~/workspace/.guides/$1/* ~/workspace
+cp -r ~/workspace/.guides/stages/$1/* ~/workspace
 
 echo -e "${red}Done!!! You can close the tab now.${NC}"
 echo '-------------------------------------'
