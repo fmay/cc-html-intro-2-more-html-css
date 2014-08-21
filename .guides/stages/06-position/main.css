@@ -1,49 +1,39 @@
 /*
-    Document   : main．css
-    Created on : 2014-08-19 11:34 AM
+    Document   : ．guides/stages/05-floatplay/main．css
+    Created on : 2014-08-20 11:10 AM
     Author     : fmay
-    Description:
-    Purpose of the stylesheet follows.
 */
 
+div {
+  width: 33%;
+  height: 100px;
+  background-color: #ff0000;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
 
 body {
-  background-color: #ffffff;  
+  font-size: 24px;
 }
 
-.main {
-  background-color: #dddddd;  
-  width: 95%;
-  margin: auto;
+#block1 {
+  float: left;   
 }
 
-nav {
-  background-color: #f48d8d;
-  width: 400px;
-  height: 50px; 
+#block2 {
+  float: left; 
+  position: relative;
+  top: 20px;
+  left: 10px;
 }
 
-header {
-  background-color: #7cafea; 
-  width: 100%;
-  height: 100px;
-  
+#block3 {
+  clear: both;
 }
 
-.content {
-  background-color: #8bd6a9;
-  width: 60%;
-  position:static;
-}
-
-.sidebar {
-  background-color: #4baf73; 
-  width: 40%; 
-  position:relative;
-}
-
-footer {
-  clear: both; 
-  background-color: #b78366;   
-  height: 80px;  
+#block4 {
+  position: absolute;
+  top: 20px;
+  left: 300px;
 }

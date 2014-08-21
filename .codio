@@ -8,7 +8,11 @@
     "Sizing": "~/workspace/.guides/restore.sh 03-sizing",
     "Floating": "~/workspace/.guides/restore.sh 04-float",
 		"Float Play": "~/workspace/.guides/restore.sh 05-floatplay",    
-    "Fixed Width": "~/workspace/.guides/restore.sh 05-fixwidth-inline"
+		"Float Position": "~/workspace/.guides/restore.sh 06-position",     
+		"Float images": "~/workspace/.guides/restore.sh 07-float-image",       
+    "Fixed Width": "~/workspace/.guides/restore.sh 08-fixwidth-inline",
+    "Spans": "~/workspace/.guides/restore.sh 09-span"
+    
   },
   
 	// Preview button configuration
