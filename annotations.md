@@ -30,17 +30,17 @@ There's not a lot to say here, so in the next section we'll add some basic CSS.
 #Adding some colors
 Select 'Add Colors' from the Rocket menu to load the correct code for this section.
 
-We haven't really changed the HTML other than to reference the CSS file, which you should have a look at and then preview.
+We haven't changed the HTML other than to include the CSS file in the project, which you should have a look at and then preview.
 
 ##Visualizing our blocks
 By adding some basic CSS colors, we can now easily see each <div> block.
 
-You should notice is that our all of our main <div> elements are all contained within one *parent* <div>, `<div class='main'>`. We have given that parent a light gray background.
+What you should notice is that our all of our main <div> elements are all contained within one *parent* <div>, `<div class='main'>`. We have given that parent a light gray background.
 
 ###Recap
 A <div> is nothing other than a *block* level container whose purpose is
 
-- to contains further HTML elements
+- to contain further HTML elements
 - to get styled
 
 ##Div behavior
@@ -51,9 +51,9 @@ A <div> has the following behavior
 
 Make sure you can see this in the preview.
 
-The reason that the <div class='main'> does not fill the entire width of the screen is that the browser has some default padding. You can override this in your CSS of course. 
+The reason that the `<div class='main'>` does not fill the entire width of the screen is that the browser has some default padding. You can override this in your CSS of course. 
 
-If you add the snippet shown below to the top of your CSS, you'll can see how you can get rid of the browser's default margin and paddings. 
+If you add the snippet shown below to the top of your CSS, you'll see how you can get rid of the browser's default margin and paddings. 
 
 Experiment by a) changing values b) using just `body` or just `p` rather than both
 
@@ -75,7 +75,7 @@ You'll notice that rather than using <div>s for all containers, we've actually t
 
 You don't *have* to use these, you can still use <divs>, but the advantage is that it makes your code more readable and you don't have to use classes. To all intents and purposes, though, they behave just like <div>s.
 
-- <nav> - is used for navigation menus
+- <nav> is used for navigation menus
 - <header> is used for a pages header section
 - <footer> is pretty obvious
 
@@ -90,7 +90,7 @@ We've also added in a few links to the 'Sidebar' container. Take a look at the H
 The menu now has a fixed size. This is done in the CSS (take a look at the <nav> selector) and in our case we've set the width to 400 pixels.
 
 ##Sizing the Content and Sidebar containers
-We really want our Content and Sidebar containers to live side by side. Although they don't yet appear correctly (which we'll correct in the next section) we want 
+We really want our Content and Sidebar containers to live side by side. Although they don't yet appear correctly (which we'll correct in the next section) we want:
 
 - the Content to occupy 60% of the width
 - the Sidebar to occupy 40% of the width
@@ -175,7 +175,7 @@ Now run preview and all will be well with our page. If you like, you can restore
 
 @annotation:tour expfloat1
 #Experiment
-Experiment a little, for example by 
+Experiment a little, for example by
 
 - removing or changing the float properties
 - changing widths
@@ -233,10 +233,10 @@ In the preview, you can see how this appears. Be sure to adjust the width of the
 We don't use this, but it is the default behavior (as if we had not used `position` at all.)
 
 ##position:fixed
-We don't use this in our example either, but it is a very cool feature. It will display at th position specified by top/bottom/right/left properties, no matter how you scroll or resize your browser. Try it out on block 4 for example and see what happens when you resize.
+We don't use this in our example either, but it is a very cool feature. It will display at the position specified by top/bottom/right/left properties, no matter how you scroll or resize your browser. Try it out on block 4 for example and see what happens when you resize.
 
 ##Experiment
-Yet again, we ask you to experiment with `position`, `top`, `left`, `bottom` and `right` until you the the hang of it.
+Yet again, we ask you to experiment with `position`, `top`, `left`, `bottom` and `right` until you have the the hang of it.
 
 @annotation:tour textwrap
 #Another use for floating
@@ -349,7 +349,7 @@ The first `.icons` selector relates to the <ul> element and the second one to th
 
 @annotation:tour span
 #Spans
-Select 'Fixed Width' from the Rocket menu and preview it.
+Select 'Spans' from the Rocket menu and preview it.
 
 We'll conclude this module by looking at the <span> HTML element.
 
@@ -371,7 +371,7 @@ What we want to do is to style just an *inline* portion of the text so it has a 
 If we just included a <span> without any styling override, we'd do the following and you would not be able to notice anything different about the way it renders.
 
 ```
-<span'>The lamb</span> was sure to go.
+<span>The lamb</span> was sure to go.
 ```
 
 However by styling it, we can now apply a CSS rule that gives it the appearance you see when you preview it.
@@ -390,12 +390,12 @@ We've actually done a couple of other interesting things on this page, just for 
 ##Web Fonts
 By default, browsers only know about a few basic fonts like Arial, Verdana, Times New Roman and a couple of others.
 
-*Web Fonts* is a really cool thing that lets you use fonts that are hosted on the web. One great example is [Google Web Fonts]() (click the link and explore).
+*Web Fonts* is a really cool thing that lets you use fonts that are hosted on the web. One great example is [Google Web Fonts](https://www.google.com/fonts) (click the link and explore).
 
 To use a web font, we simply link to it in the <head> section of our HTML page
 
 ```
-  <link href='http://fonts.googleapis.com/css?family=Daning+Scripct:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
 ```
 
 Then, in the CSS, we can refer to it using
@@ -405,7 +405,7 @@ font: 20px 'Dancing Script', cursive;
 ```
 
 ##Bold, Italic & Emphasized Text
-There are different ways to render bold text, all of which we have used in this example
+There are different ways to render text, all of which we have used in this example
 
 - The <b> tag is one standard way and simply bolds the text
 - The <strong> tag is another. This renders as bold but it is extremely useful for blind people as it also instructs their screen readers to change the way the text is actually spoken (it alters the tone). 
