@@ -1,4 +1,10 @@
-@annotation:tour intro
+---
+title: More Advanced Layouts
+files: []
+editable: false
+layout: 2-panels-tree
+
+---
 #More Advanced Layouts
 This module builds on the materials we learnt in the 'My First Web Page' module.
 
@@ -6,67 +12,62 @@ We will learn how to flow logical blocks of content that can change as the brows
 
 The image below shows what we will be building. 
 
-![](.guides/an-img/result.png)
+![](.guides/img/result.png)
 
 It is not especially pretty, but we want to concentrate on the basics and not spend too much time on details. In the next module, we will be building something much prettier.
+---
+title: Starting point
+files:
+  - path: index.html
+    panel: 0
+    ref: ""
+    lineCount: 0
+editable: true
+layout: ""
 
-@annotation:tour experiment
+---
+#Starting point
+You can select 'Starting Out' from the ![](.guides/img/rocket.png) Rocket menu to load the correct code for this section.
+
+Take a look at the `index.html` file that has been opened. Preview it to see some very plain output.
+
+There's not a lot to say here, so in the next section we'll add some basic CSS.
+---
+title: Experiment
+files: []
+editable: true
+layout: ""
+
+---
 #Experiment
 As with all Codio modules, we strongly encourage you to experiment as you go. You should hack the `index.html` and `main.css` files about without fear.
 
-If you mess something up, you can restore the code by selecting the relevant item from the Rocket menu.
+If you mess something up, you can restore the code by selecting the relevant item from the ![](.guides/img/rocket.png) Rocket menu.
 
-![](.guides/an-img/rocket.png)
+![](.guides/img/rocketm.png)
 
-@annotation:tour raw
-#Starting point
-You can select 'Starting Out' from the Rocket menu to load the correct code for this section.
+---
+title: Adding some colors
+files: []
+editable: true
+layout: ""
 
-Open up `index.html` and take a look at it. Preview it to see some very plain output.
-
-There's not a lot to say here, so in the next section we'll add some basic CSS.
-
-@annotation:tour colors
+---
 #Adding some colors
-Select 'Add Colors' from the Rocket menu to load the correct code for this section.
+Select 'Add Colors' from the ![](.guides/img/rocket.png) Rocket menu to load the correct code for this section.
 
 We haven't changed the HTML other than to include the CSS file in the project, which you should have a look at and then preview.
 
-##Visualizing our blocks
-By adding some basic CSS colors, we can now easily see each <div> block.
 
-What you should notice is that our all of our main <div> elements are all contained within one *parent* <div>, `<div class='main'>`. We have given that parent a light gray background.
+---
+title: Sizing our containers
+files: []
+editable: false
+layout: ""
 
-###Recap
-A <div> is nothing other than a *block* level container whose purpose is
-
-- to contain further HTML elements
-- to get styled
-
-##Div behavior
-A <div> has the following behavior
-
-- it will expand horizontally to fill its parent container unless a width is specified in the CSS (which we have not done here yet)
-- it will expand vertically just enough to contain its child elements, which in our case are just <p> elements with some text to identify the container
-
-Make sure you can see this in the preview.
-
-The reason that the `<div class='main'>` does not fill the entire width of the screen is that the browser has some default padding. You can override this in your CSS of course. 
-
-If you add the snippet shown below to the top of your CSS, you'll see how you can get rid of the browser's default margin and paddings. 
-
-Experiment by a) changing values b) using just `body` or just `p` rather than both
-
-```
-body, p {
-    margin: 0;
-    padding: 0;
-}
-```
-
-@annotation:tour sizing
+---
 #Sizing our containers
-Select 'Sizing' from the Rocket menu to load the correct code for this section.
+Select 'Sizing' from the ![](.guides/img/rocket.png) Rocket menu to load the correct code for this section.
 
 If you preview, you can now see something more interesting starting to happen. Let's run through what we've done.
 
@@ -96,11 +97,15 @@ We really want our Content and Sidebar containers to live side by side. Although
 - the Sidebar to occupy 40% of the width
 
 Next, we'll get them the appear side by side.
+---
+title: Floating the containers
+files: []
+editable: false
+layout: ""
 
-
-@annotation:tour float
+---
 #Floating the containers
-Select 'Floating' from the Rocket menu to load the correct code for this section.
+Select 'Floating' from the ![](.guides/img/rocket.png) Rocket menu to load the correct code for this section.
 
 What happens next is actually quite tricky to understand. It is, without doubt, best understood by experimentation. So, once you've read the explanations, experiment like crazy with the CSS settings until you feel you understand it.
 
@@ -140,8 +145,13 @@ Take a look at the preview of our page. Be sure to adjust the width of the previ
 - Content and Sidebar are floated and so imagine they are not even there  when you read the next bullet point
 - The next unfloated block is the Footer. This will, and does, appear beneath the Header block. You can actually see its brown background sticking out below the Header block. We actually set the width of the Sidebar <div> to be 35% so we could see this happening. If we set it to 40%, it would be completely hidden from view.
 - The reason that the text 'FOOTER' appears messily beneath the Sidebar is that the browser needs to show it and this is the earliest place on the page that it can fit.
+---
+title: Clearing this problem
+files: []
+editable: false
+layout: ""
 
-@annotation:tour clear
+---
 #Clearing this problem
 To make everything appear as it should be, we need to understand the CSS `clear` property.
 
@@ -171,9 +181,13 @@ footer {
 ```
 
 Now run preview and all will be well with our page. If you like, you can restore the width of the Sidebar to 40%. 
+---
+title: Experiment
+files: []
+editable: false
+layout: ""
 
-
-@annotation:tour expfloat1
+---
 #Experiment
 Experiment a little, for example by
 
@@ -181,21 +195,31 @@ Experiment a little, for example by
 - changing widths
 - playing with the `clear` property
 
-Really hack it about. You can always restore to its original state by selecting 'Floating' from the Rocket menu.
+Really hack it about. You can always restore to its original state by selecting 'Floating' from the ![](.guides/img/rocket.png) Rocket menu.
+---
+title: Another float experiment
+files: []
+editable: false
+layout: ""
 
-@annotation:tour experimentfloat
+---
 #Another float experiment
-Select 'Float Play' from the Rocket menu.
+Select 'Float Play' from the ![](.guides/img/rocket.png) Rocket menu.
 
 You now have another project that should help you reinforce things using simple blocks.
 
 When you preview, you'll see that Blocks 3 and 4 overlap one another. We covered the solution to this in the previous section (remember `clear: both`?).
 
 Looking at the HTML, you can see that each block has its own ID and we've created selectors in the CSS for each of these. Go ahead and make changes with `float`, `width` and any other properties you want to modify.
+---
+title: Positioning blocks
+files: []
+editable: false
+layout: ""
 
-@annotation:tour positioning
+---
 #Positioning blocks
-Select 'Float Position' from the Rocket menu.
+Select 'Float Position' from the ![](.guides/img/rocket.png) Rocket menu.
 
 There is one more thing worth pointing out that allows us to do some powerful positional adjustments of blocks.
 
@@ -237,10 +261,15 @@ We don't use this in our example either, but it is a very cool feature. It will 
 
 ##Experiment
 Yet again, we ask you to experiment with `position`, `top`, `left`, `bottom` and `right` until you have the the hang of it.
+---
+title: Another use for floating
+files: []
+editable: false
+layout: ""
 
-@annotation:tour textwrap
+---
 #Another use for floating
-Select 'Float Images' from the Rocket menu.
+Select 'Float Images' from the ![](.guides/img/rocket.png) Rocket menu.
 
 There is actually another very good usage for the `float` property. Let's say you have an image and you want your text to wrap nearly around the image. The `float` property can be used to accomplish this very easily.
 
@@ -259,12 +288,15 @@ Add the following to `main.css` and you'll see a much nicer result.
   width: 100px;
 }
 ```
+---
+title: Fixed width layout
+files: []
+editable: false
+layout: ""
 
-
-
-@annotation:tour fixedwidth
+---
 #Fixed width layout
-Select 'Fixed Width' from the Rocket menu.
+Select 'Fixed Width' from the ![](.guides/img/rocket.png) Rocket menu.
 
 What we are looking at here is a fixed width design that looks much like our earlier examples.
 
@@ -288,8 +320,13 @@ The `.main` container is a <div> that contains all the other <div>s on our page.
 If you narrow down the preview pane, you will see that it does not do any resizing or reflowing of the content. This is because we defined a fixed width of 500 pixels.
 
 So, if you want a web page to display equally well on a smartphone as it does on the desktop then using fixed width designs is a bad idea as it will not fit on smaller screen formats.
+---
+title: Introducing something cool
+files: []
+editable: false
+layout: ""
 
-@annotation:tour webicons
+---
 #Introducing something cool
 We thought we'd introduce a really cool feature at this point that has nothing to fo with HTML layouts. 
 
@@ -347,9 +384,15 @@ The first `.icons` selector relates to the <ul> element and the second one to th
 
 `display: inline-block;` is actually an alternative to using `float`.
 
-@annotation:tour span
+---
+title: Spans
+files: []
+editable: false
+layout: ""
+
+---
 #Spans
-Select 'Spans' from the Rocket menu and preview it.
+Select 'Spans' from the ![](.guides/img/rocket.png) Rocket menu and preview it.
 
 We'll conclude this module by looking at the <span> HTML element.
 
@@ -379,11 +422,16 @@ However by styling it, we can now apply a CSS rule that gives it the appearance 
 ```
 .last-line {
   margin-left: 10px;
-  font: 20px 'Dancing Script', cursive;
+  font: 30px 'Dancing Script', cursive;
 }
 ```
+---
+title: Some extras
+files: []
+editable: false
+layout: ""
 
-@annotation:tour tweaks
+---
 #Some extras
 We've actually done a couple of other interesting things on this page, just for the fun of it.
 
@@ -401,7 +449,7 @@ To use a web font, we simply link to it in the <head> section of our HTML page
 Then, in the CSS, we can refer to it using
 
 ```
-font: 20px 'Dancing Script', cursive;
+font: 30px 'Dancing Script', cursive;
 ```
 
 ##Bold, Italic & Emphasized Text
@@ -411,14 +459,16 @@ There are different ways to render text, all of which we have used in this examp
 - The <strong> tag is another. This renders as bold but it is extremely useful for blind people as it also instructs their screen readers to change the way the text is actually spoken (it alters the tone). 
 - The <i> tag italicizes your text
 - You can also *emphasize* text using the <em> tag, which also renders it italic but the meaning is slightly different and implies it would be spoken differently. For example 'You really *should* learn to speak a foreign language'.
+---
+title: The End
+files: []
+editable: false
+layout: ""
 
-
-@annotation:tour end
+---
 #The End
 That's it! We've reached the end of this module and you are now well on the way to being a web developer.
 
 Feel free to look up things on the web to strech your knowledge and above all - experiment.
 
 Coding is not really an exact science. A bit like spoken languages, there are quirks and exceptions and bits of unexpected behavior that can only be understood by playing around and making mistakes.
-
-
