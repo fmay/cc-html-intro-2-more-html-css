@@ -5,7 +5,6 @@ editable: false
 layout: 2-panels-tree
 
 ---
-#More Advanced Layouts
 This module builds on the materials we learnt in the 'My First Web Page' module.
 
 We will learn how to flow logical blocks of content that can change as the browser resizes.
@@ -26,7 +25,6 @@ editable: true
 layout: ""
 
 ---
-#Starting point
 You can select 'Starting Out' from the ![](.guides/img/rocket.png) Rocket menu to load the correct code for this section.
 
 Take a look at the `index.html` file that has been opened. Preview it to see some very plain output.
@@ -39,7 +37,6 @@ editable: true
 layout: ""
 
 ---
-#Experiment
 As with all Codio modules, we strongly encourage you to experiment as you go. You should hack the `index.html` and `main.css` files about without fear.
 
 If you mess something up, you can restore the code by selecting the relevant item from the ![](.guides/img/rocket.png) Rocket menu.
@@ -53,7 +50,6 @@ editable: true
 layout: ""
 
 ---
-#Adding some colors
 Select 'Add Colors' from the ![](.guides/img/rocket.png) Rocket menu to load the correct code for this section.
 
 We haven't changed the HTML other than to include the CSS file in the project, which you should have a look at and then preview.
@@ -66,7 +62,6 @@ editable: false
 layout: ""
 
 ---
-#Sizing our containers
 Select 'Sizing' from the ![](.guides/img/rocket.png) Rocket menu to load the correct code for this section.
 
 If you preview, you can now see something more interesting starting to happen. Let's run through what we've done.
@@ -104,7 +99,6 @@ editable: false
 layout: ""
 
 ---
-#Floating the containers
 Select 'Floating' from the ![](.guides/img/rocket.png) Rocket menu to load the correct code for this section.
 
 What happens next is actually quite tricky to understand. It is, without doubt, best understood by experimentation. So, once you've read the explanations, experiment like crazy with the CSS settings until you feel you understand it.
@@ -152,7 +146,6 @@ editable: false
 layout: ""
 
 ---
-#Clearing this problem
 To make everything appear as it should be, we need to understand the CSS `clear` property.
 
 The `clear` CSS property specifies whether an element can be next to floating elements that precede it or must be moved down (cleared) below them.
@@ -188,7 +181,6 @@ editable: false
 layout: ""
 
 ---
-#Experiment
 Experiment a little, for example by
 
 - removing or changing the float properties
@@ -203,7 +195,6 @@ editable: false
 layout: ""
 
 ---
-#Another float experiment
 Select 'Float Play' from the ![](.guides/img/rocket.png) Rocket menu.
 
 You now have another project that should help you reinforce things using simple blocks.
@@ -218,7 +209,6 @@ editable: false
 layout: ""
 
 ---
-#Positioning blocks
 Select 'Float Position' from the ![](.guides/img/rocket.png) Rocket menu.
 
 There is one more thing worth pointing out that allows us to do some powerful positional adjustments of blocks.
@@ -268,7 +258,6 @@ editable: false
 layout: ""
 
 ---
-#Another use for floating
 Select 'Float Images' from the ![](.guides/img/rocket.png) Rocket menu.
 
 There is actually another very good usage for the `float` property. Let's say you have an image and you want your text to wrap nearly around the image. The `float` property can be used to accomplish this very easily.
@@ -295,7 +284,6 @@ editable: false
 layout: ""
 
 ---
-#Fixed width layout
 Select 'Fixed Width' from the ![](.guides/img/rocket.png) Rocket menu.
 
 What we are looking at here is a fixed width design that looks much like our earlier examples.
@@ -327,7 +315,6 @@ editable: false
 layout: ""
 
 ---
-#Introducing something cool
 We thought we'd introduce a really cool feature at this point that has nothing to fo with HTML layouts. 
 
 If you look in the footer, you'll see that there are some icons. These are actually provided by a web based service called [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/).
@@ -391,7 +378,6 @@ editable: false
 layout: ""
 
 ---
-#Spans
 Select 'Spans' from the ![](.guides/img/rocket.png) Rocket menu and preview it.
 
 We'll conclude this module by looking at the <span> HTML element.
@@ -432,7 +418,6 @@ editable: false
 layout: ""
 
 ---
-#Some extras
 We've actually done a couple of other interesting things on this page, just for the fun of it.
 
 ##Web Fonts
@@ -466,7 +451,6 @@ editable: false
 layout: ""
 
 ---
-#The End
 That's it! We've reached the end of this module and you are now well on the way to being a web developer.
 
 Feel free to look up things on the web to strech your knowledge and above all - experiment.
