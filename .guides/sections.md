@@ -1,8 +1,8 @@
 ---
-title: HTML LAYOUTS
+title: MORE ADVANCED HTML LAYOUTS
 files: []
 editable: false
-layout: ""
+layout: 2-panels-tree
 
 ---
 #'Forking' this module
@@ -40,7 +40,7 @@ When you open some code from the file tree or the Codio Guide opens a file for y
 
 
 ---
-title: More Advanced Layouts
+title: Overview
 files: []
 editable: false
 layout: 2-panels-tree
