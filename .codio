@@ -3,15 +3,15 @@
 
 	// Run button configuration
   "commands": {
-    "Starting Out": "~/workspace/.guides/restore.sh 01-raw",
-    "Add Colors": "~/workspace/.guides/restore.sh 02-colors",
-    "Sizing": "~/workspace/.guides/restore.sh 03-sizing",
-    "Floating": "~/workspace/.guides/restore.sh 04-float",
-		"Float Play": "~/workspace/.guides/restore.sh 05-floatplay",    
-		"Float Position": "~/workspace/.guides/restore.sh 06-position",     
-		"Float images": "~/workspace/.guides/restore.sh 07-float-image",       
-    "Fixed Width": "~/workspace/.guides/restore.sh 08-fixwidth-inline",
-    "Spans": "~/workspace/.guides/restore.sh 09-span"
+    "Starting Out": "bash ~/workspace/.guides/restore.sh 01-raw",
+    "Add Colors": "bash ~/workspace/.guides/restore.sh 02-colors",
+    "Sizing": "bash ~/workspace/.guides/restore.sh 03-sizing",
+    "Floating": "bash ~/workspace/.guides/restore.sh 04-float",
+		"Float Play": "bash ~/workspace/.guides/restore.sh 05-floatplay",    
+		"Float Position": "bash ~/workspace/.guides/restore.sh 06-position",     
+		"Float images": "bash ~/workspace/.guides/restore.sh 07-float-image",       
+    "Fixed Width": "bash ~/workspace/.guides/restore.sh 08-fixwidth-inline",
+    "Spans": "bash ~/workspace/.guides/restore.sh 09-span"
     
   },
   
