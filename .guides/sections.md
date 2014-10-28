@@ -42,7 +42,7 @@ When you open some code from the file tree or the Codio Guide opens a file for y
 ---
 title: Overview
 files: []
-editable: false
+editable: true
 layout: 2-panels-tree
 
 ---
@@ -59,6 +59,7 @@ It is not especially pretty, but we want to concentrate on the basics and not sp
 title: Starting point
 files:
   - path: index.html
+    action: open
     panel: 0
     ref: ""
     lineCount: 0
@@ -66,14 +67,16 @@ editable: true
 layout: ""
 
 ---
-You can select 'Starting Out' from the ![](.guides/img/rocket.png) Rocket menu to load the correct code for this section.
-
 Take a look at the `index.html` file that has been opened. Preview it to see some very plain output.
 
 There's not a lot to say here, so in the next section we'll add some basic CSS.
 ---
 title: Experiment
-files: []
+files:
+  - path: "#all"
+    action: close
+    panel: 0
+    ref: ""
 editable: true
 layout: ""
 
@@ -86,29 +89,41 @@ If you mess something up, you can restore the code by selecting the relevant ite
 
 ---
 title: Adding some colors
-files: []
+files:
+  - path: "#cmd: bash .guides/restore.sh 02-colors"
+    action: open
+    panel: 0
+    ref: ""
 editable: true
 layout: ""
 
 ---
-Select 'Add Colors' from the ![](.guides/img/rocket.png) Rocket menu to load the correct code for this section.
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Add Colors'. 
 
-We haven't changed the HTML other than to include the CSS file in the project, which you should have a look at and then preview.
+We haven't changed the HTML other than to include the CSS file in the project, which you should have a look at and then preview. **[Click here](close_all; open_files main.css index.html;open_preview index.html)** to open the files and preview
 
 
 ---
 title: Sizing our containers
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    ref: ""
+  - path: "#cmd: bash .guides/restore.sh 03-sizing"
+    action: open
+    panel: 0
+    ref: ""
+editable: true
 layout: ""
 
 ---
-Select 'Sizing' from the ![](.guides/img/rocket.png) Rocket menu to load the correct code for this section.
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Sizing'. 
 
-If you preview, you can now see something more interesting starting to happen. Let's run through what we've done.
+**[Click here](open_files main.css index.html;open_preview index.html)** to preview and you can now see something more interesting starting to happen. Let's run through what we've done.
 
 ##Nicer HTML Tags
-You'll notice that rather than using <div>s for all containers, we've actually taken advantage of some standard HTML tags that are provided for standard elements.
+
+**[Click here](open_file index.html)** to open the HTML file and you'll notice that rather than using <div>s for all containers, we've actually taken advantage of some standard HTML tags that are provided for standard elements.
 
 You don't *have* to use these, you can still use <divs>, but the advantage is that it makes your code more readable and you don't have to use classes. To all intents and purposes, though, they behave just like <div>s.
 
@@ -124,6 +139,8 @@ We've added some Latin text to the 'Content' container. This is done in the HTML
 We've also added in a few links to the 'Sidebar' container. Take a look at the HTML to see how links are set up.
 
 ##Sizing the menu
+**[Click here](open_file main.css)** to open the CSS file.
+
 The menu now has a fixed size. This is done in the CSS (take a look at the <nav> selector) and in our case we've set the width to 400 pixels.
 
 ##Sizing the Content and Sidebar containers
@@ -135,14 +152,22 @@ We really want our Content and Sidebar containers to live side by side. Although
 Next, we'll get them the appear side by side.
 ---
 title: Floating the containers
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    ref: ""
+  - path: "#cmd: bash .guides/restore.sh 04-float"
+    action: open
+    ref: ""
+editable: true
 layout: ""
 
 ---
-Select 'Floating' from the ![](.guides/img/rocket.png) Rocket menu to load the correct code for this section.
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Floating'. 
 
 What happens next is actually quite tricky to understand. It is, without doubt, best understood by experimentation. So, once you've read the explanations, experiment like crazy with the CSS settings until you feel you understand it.
+
+**[Click here](open_preview index.html panel=0)** to preview.
 
 ##A <div>'s natural flow
 A <div> is a *block* level container. 
@@ -152,7 +177,7 @@ A <div> is a *block* level container.
 
 In the previous section we saw how the Content and Sidebar <div>s display underneath each other, even though we set the width properties to 60% and 40% wide (of their parent container's width) so they *ought* to fit side by side.
 
-To get them to display correctly, we need to use a special CSS property called 'float'. If you look at `main.css` you can see that we have the following 
+To get them to display correctly, we need to use a special CSS property called 'float'. **[Click here](open_file main.css panel=0)** to look at `main.css` you can see that we have the following 
 
 ```
 .content {
@@ -174,7 +199,7 @@ The key thing that float does is to *remove the floated element from the normal 
 The problem with removing a block from the normal document flow is that subsequent *unfloated* blocks will appear in the normal document flow and will be display beneath the last unfloated block element.
 
 ##Looking at our page
-Take a look at the preview of our page. Be sure to adjust the width of the preview window so you can see how the behavior changes as you resize.
+**[Click here](open_preview index.html) and take a look at the preview of our page. Be sure to adjust the width of the preview window so you can see how the behavior changes as you resize.
 
 - Menu and Header are unfloated blocks and so appear obediently beneath one another. 
 - Content and Sidebar are floated and so imagine they are not even there  when you read the next bullet point
@@ -182,8 +207,13 @@ Take a look at the preview of our page. Be sure to adjust the width of the previ
 - The reason that the text 'FOOTER' appears messily beneath the Sidebar is that the browser needs to show it and this is the earliest place on the page that it can fit.
 ---
 title: Clearing this problem
-files: []
-editable: false
+files:
+  - path: main.css
+    action: open
+    panel: 0
+    ref: "footer {"
+    lineCount: 4
+editable: true
 layout: ""
 
 ---
@@ -218,7 +248,7 @@ Now run preview and all will be well with our page. If you like, you can restore
 ---
 title: Experiment
 files: []
-editable: false
+editable: true
 layout: ""
 
 ---
@@ -231,33 +261,46 @@ Experiment a little, for example by
 Really hack it about. You can always restore to its original state by selecting 'Floating' from the ![](.guides/img/rocket.png) Rocket menu.
 ---
 title: Another float experiment
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    ref: ""
+  - path: "#cmd: bash .guides/restore.sh 05-floatplay"
+    action: open
+    panel: 0
+    ref: ""
+editable: true
 layout: ""
 
 ---
-Select 'Float Play' from the ![](.guides/img/rocket.png) Rocket menu.
-
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Float Play'.
 You now have another project that should help you reinforce things using simple blocks.
 
-When you preview, you'll see that Blocks 3 and 4 overlap one another. We covered the solution to this in the previous section (remember `clear: both`?).
+**[Click here](open_files main.css index.html; open_preview index.html)** to preview and you'll see that Blocks 3 and 4 overlap one another. We covered the solution to this in the previous section (remember `clear: both`?).
 
-Looking at the HTML, you can see that each block has its own ID and we've created selectors in the CSS for each of these. Go ahead and make changes with `float`, `width` and any other properties you want to modify.
+**[Click here](open_file index.html panel=0)** to open the html file and you can see that each block has its own ID and we've created selectors in the CSS for each of these. Go ahead and make changes with `float`, `width` and any other properties you want to modify.
 ---
 title: Positioning blocks
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    ref: ""
+  - path: "#cmd: bash .guides/restore.sh 06-position"
+    action: open
+    panel: 0
+    ref: ""
+editable: true
 layout: ""
 
 ---
-Select 'Float Position' from the ![](.guides/img/rocket.png) Rocket menu.
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Float Position'. 
 
 There is one more thing worth pointing out that allows us to do some powerful positional adjustments of blocks.
 
 The `position` property allows us to adjust the way that a block displays.
 
 ##position:relative
-Relative positioning allows you to adjust the positioning of a block *relative to itself*. In `main.css` we have 
+Relative positioning allows you to adjust the positioning of a block *relative to itself*. **[Click here](open_file main.css panel=0)** to open the main.css file and see we have 
 
 ```
 #block2 {
@@ -282,7 +325,7 @@ Absolute positioning means that we want to position the block relative to the to
 }
 ```
 
-In the preview, you can see how this appears. Be sure to adjust the width of the preview window so you can see how the behavior changes as you resize.
+**[Click here](open_preview index.html panel=0)** to preview. and you can see how this appears. Be sure to adjust the width of the preview window so you can see how the behavior changes as you resize.
 
 ##position:static
 We don't use this, but it is the default behavior (as if we had not used `position` at all.)
@@ -294,18 +337,25 @@ We don't use this in our example either, but it is a very cool feature. It will 
 Yet again, we ask you to experiment with `position`, `top`, `left`, `bottom` and `right` until you have the the hang of it.
 ---
 title: Another use for floating
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    ref: ""
+  - path: "#cmd: bash .guides/restore.sh 07-float-image"
+    action: open
+    panel: 0
+    ref: ""
+editable: true
 layout: ""
 
 ---
-Select 'Float Images' from the ![](.guides/img/rocket.png) Rocket menu.
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Float Images'. 
 
 There is actually another very good usage for the `float` property. Let's say you have an image and you want your text to wrap nearly around the image. The `float` property can be used to accomplish this very easily.
 
-If you preview, you'll see that the text displays inline with the image. 
+**[Click here](open_preview index.html)** to preview. and you'll see that the text displays inline with the image. 
 
-Add the following to `main.css` and you'll see a much nicer result.
+**[Click here](open_file main.css panel=0)** to open the main.css file , add the following to `main.css` and you'll see a much nicer result.
 
 ```
 #first {
@@ -320,18 +370,26 @@ Add the following to `main.css` and you'll see a much nicer result.
 ```
 ---
 title: Fixed width layout
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    ref: ""
+  - path: "#cmd: bash .guides/restore.sh 08-fixwidth-inline"
+    action: open
+    panel: 0
+    ref: ""
+    lineCount: 5
+editable: true
 layout: ""
 
 ---
-Select 'Fixed Width' from the ![](.guides/img/rocket.png) Rocket menu.
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Fixed Width'.
 
 What we are looking at here is a fixed width design that looks much like our earlier examples.
 
-Preview and adjust the size of the preview window by moving the pane splitter. Notice how the layout is centered and retains a fixed width.
+**[Click here](open_preview index.html panel=0)** to preview and adjust the size of the preview window by moving the pane splitter. Notice how the layout is centered and retains a fixed width.
 
-To see how we accomplished this, look at this piece of CSS 
+To see how we accomplished this, **[Click here](open_file main.css panel=0)** to look at this piece of CSS 
 
 ```
 .main {
@@ -351,12 +409,16 @@ If you narrow down the preview pane, you will see that it does not do any resizi
 So, if you want a web page to display equally well on a smartphone as it does on the desktop then using fixed width designs is a bad idea as it will not fit on smaller screen formats.
 ---
 title: Introducing something cool
-files: []
-editable: false
+files:
+  - path: "main.css, index.html"
+    action: open
+    panel: 0
+    ref: ""
+editable: true
 layout: ""
 
 ---
-We thought we'd introduce a really cool feature at this point that has nothing to fo with HTML layouts. 
+We thought we'd introduce a really cool feature at this point that has nothing to do with HTML layouts. 
 
 If you look in the footer, you'll see that there are some icons. These are actually provided by a web based service called [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/).
 
@@ -414,18 +476,25 @@ The first `.icons` selector relates to the <ul> element and the second one to th
 
 ---
 title: Spans
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    ref: ""
+  - path: "#cmd: bash .guides/restore.sh 09-span"
+    action: open
+    panel: 0
+    ref: ""
+editable: true
 layout: ""
 
 ---
-Select 'Spans' from the ![](.guides/img/rocket.png) Rocket menu and preview it.
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Spans'. 
 
 We'll conclude this module by looking at the <span> HTML element.
 
 Whereas a <div> is a *block* level element, the <span> is an *inline* element. This means that it does not display on a new line, rather it is displayed inline with other elements, often just text.
 
-Open up `index.html` and take a look at the last line of each verse.
+**[Click here](open_file index.html panel=0)** to open up `index.html` and take a look at the last line of each verse.
 
 ```
   <p class="verse">
@@ -444,7 +513,7 @@ If we just included a <span> without any styling override, we'd do the following
 <span>The lamb</span> was sure to go.
 ```
 
-However by styling it, we can now apply a CSS rule that gives it the appearance you see when you preview it.
+However by styling it, we can now apply a CSS rule that gives it the appearance you see when you preview it. **[Click here](open_file main.css; open_preview index.html panel=0)** to open the preview.
 
 ```
 .last-line {
@@ -454,8 +523,18 @@ However by styling it, we can now apply a CSS rule that gives it the appearance 
 ```
 ---
 title: Some extras
-files: []
-editable: false
+files:
+  - path: main.css
+    action: open
+    panel: 0
+    ref: "font: 30px 'Dancing Script', cursive;"
+    lineCount: 1
+  - path: index.html
+    action: open
+    panel: 0
+    ref: " <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>"
+    lineCount: 1
+editable: true
 layout: ""
 
 ---
@@ -472,7 +551,7 @@ To use a web font, we simply link to it in the <head> section of our HTML page
   <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
 ```
 
-Then, in the CSS, we can refer to it using
+Then, in the CSS, **[Click here](open_file main.css)** we can refer to it using
 
 ```
 font: 30px 'Dancing Script', cursive;
