@@ -1,48 +1,46 @@
 ---
 title: MORE ADVANCED HTML LAYOUTS
 files: []
-editable: false
 layout: 2-panels-tree
 
 ---
-#'Forking' this module
+# 'Forking' this module
 If you check the url address bar of your browser, if it starts with `https://codio.com/anon/....` then this means it is an anonymous project and any changes you make will be lost when you close down the browser tab. This will be the case if you access the module from the Codio Courses screen.
 
 To avoid losing changes, you can 'fork' the module into your own Codio account where it will appear in your projects list. To do this, select the **'Project->Fork'** menu item and choose a suitable name for the project.
 
-#A few words about the Codio Guide
+# A few words about the Codio Guide
 Before we start with this module here are a few pointers about using this Codio Guide.
 
 If you've already read this in another Guide then skip to the next section.
 
 ![](.guides/img/guides-helper.jpg)
 
-#The File Tree
+# The File Tree
 The left most panel is the File Tree **(1)**. This is where your project's files are stored. You can open up files you see listed there by clicking on them.
 
-#About the Codio Guide
+# About the Codio Guide
 The Codio Guide **(2)** is the content you are reading right now. It's worth knowing the following
 
 - if you ever close the Guide tab by mistake, simply open in from the View menu **(3)**.
 - you can expand and collapse the Guide's Table of Contents **(4)** with the Hamburger icon **(5)**
 - you move from one section of the Guide to the next using either the Table of Contents or the Navigation Buttons (6)
 
-#The Rocket Menu
+# The Rocket Menu
 The Rocket menu **(7)** is a dropdown menu that lets you load code into your file tree when you click it as different sections might want to show different bits of code.
 
 You are usually encouraged to mess around with the live code. It is perfectly likely that you can wreck the code so pressing the Rocket menu button will restore the code again to its original state.
 
-#Previewing
+# Previewing
 The Preview button **(8)** lets you run your web application. When you press it, it will open up a preview window so you can play with your app.
 
-#Code Tabs
+# Code Tabs
 When you open some code from the file tree or the Codio Guide opens a file for you automatically, they will appear within a tab **(9)** in one of the panels. You can have several of these open at one time so you may need to click on the respective tab to get to see the file you want.
 
 
 ---
 title: Overview
 files: []
-editable: true
 layout: 2-panels-tree
 
 ---
@@ -113,7 +111,6 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -121,29 +118,29 @@ layout: ""
 
 **[Click here](open_files main.css index.html;open_preview index.html)** to preview and you can now see something more interesting starting to happen. Let's run through what we've done.
 
-##Nicer HTML Tags
+## Nicer HTML Tags
 
-**[Click here](open_file index.html)** to open the HTML file and you'll notice that rather than using <div>s for all containers, we've actually taken advantage of some standard HTML tags that are provided for standard elements.
+**[Click here](open_file index.html)** to open the HTML file and you'll notice that rather than using `<div>`'s for all containers, we've actually taken advantage of some standard HTML tags that are provided for standard elements.
 
-You don't *have* to use these, you can still use <divs>, but the advantage is that it makes your code more readable and you don't have to use classes. To all intents and purposes, though, they behave just like <div>s.
+You don't *have* to use these, you can still use `<div>`'s, but the advantage is that it makes your code more readable and you don't have to use classes. To all intents and purposes, though, they behave just like `<div>`'s.
 
-- <nav> is used for navigation menus
-- <header> is used for a pages header section
-- <footer> is pretty obvious
+- `<nav>` is used for navigation menus
+- `<header>` is used for a pages header section
+- `<footer>` is pretty obvious
 
-There are several other *semantic* elements offered by HTML, namely <section>, <article>, <aside>, <figure>, <figcaption>, <details>, <summary>, <mark>, <time>.
+There are several other *semantic* elements offered by HTML, namely `<section>, <article>, <aside>, <figure>, <figcaption>, <details>, <summary>, <mark>, <time>`.
 
-##Added some content
+## Added some content
 We've added some Latin text to the 'Content' container. This is done in the HTML.
 
 We've also added in a few links to the 'Sidebar' container. Take a look at the HTML to see how links are set up.
 
-##Sizing the menu
+## Sizing the menu
 **[Click here](open_file main.css)** to open the CSS file.
 
-The menu now has a fixed size. This is done in the CSS (take a look at the <nav> selector) and in our case we've set the width to 400 pixels.
+The menu now has a fixed size. This is done in the CSS (take a look at the `<nav>` selector) and in our case we've set the width to 400 pixels.
 
-##Sizing the Content and Sidebar containers
+## Sizing the Content and Sidebar containers
 We really want our Content and Sidebar containers to live side by side. Although they don't yet appear correctly (which we'll correct in the next section) we want:
 
 - the Content to occupy 60% of the width
@@ -159,7 +156,6 @@ files:
   - path: "#cmd: bash .guides/restore.sh 04-float"
     action: open
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -169,15 +165,17 @@ What happens next is actually quite tricky to understand. It is, without doubt, 
 
 **[Click here](open_preview index.html panel=0)** to preview.
 
-##A <div>'s natural flow
-A <div> is a *block* level container. 
+## A &lt;div&gt;'s natural flow
+A `<div>` is a *block* level container. 
 
 - It takes up the full width of its parent container
-- It is a part of the natural flow of the document. This means it will be positioned underneath the previous block level element (<div>s in our case).
+- It is a part of the natural flow of the document. This means it will be positioned underneath the previous block level element (`<div>`'s in our case).
 
-In the previous section we saw how the Content and Sidebar <div>s display underneath each other, even though we set the width properties to 60% and 40% wide (of their parent container's width) so they *ought* to fit side by side.
+In the previous section we saw how the Content and Sidebar `<div>`'s display underneath each other, even though we set the width properties to 60% and 40% wide (of their parent container's width) so they *ought* to fit side by side.
 
-To get them to display correctly, we need to use a special CSS property called 'float'. **[Click here](open_file main.css panel=0)** to look at `main.css` you can see that we have the following 
+To get them to display correctly, we need to use a special CSS property called 'float'. 
+
+**[Click here](open_file main.css panel=0)** to look at `main.css` you can see that we have the following 
 
 ```
 .content {
@@ -193,17 +191,17 @@ To get them to display correctly, we need to use a special CSS property called '
 }
 ```
 
-##What does 'float' do then?
+## What does 'float' do then?
 The key thing that float does is to *remove the floated element from the normal block flow* and then *position the floated element usually to the left or right of the page*.
 
 The problem with removing a block from the normal document flow is that subsequent *unfloated* blocks will appear in the normal document flow and will be display beneath the last unfloated block element.
 
-##Looking at our page
-**[Click here](open_preview index.html) and take a look at the preview of our page. Be sure to adjust the width of the preview window so you can see how the behavior changes as you resize.
+## Looking at our page
+**[Click here](open_preview index.html)** and take a look at the preview of our page. Be sure to adjust the width of the preview window so you can see how the behavior changes as you resize.
 
 - Menu and Header are unfloated blocks and so appear obediently beneath one another. 
 - Content and Sidebar are floated and so imagine they are not even there  when you read the next bullet point
-- The next unfloated block is the Footer. This will, and does, appear beneath the Header block. You can actually see its brown background sticking out below the Header block. We actually set the width of the Sidebar <div> to be 35% so we could see this happening. If we set it to 40%, it would be completely hidden from view.
+- The next unfloated block is the Footer. This will, and does, appear beneath the Header block. You can actually see its brown background sticking out below the Header block. We actually set the width of the Sidebar `<div>` to be 35% so we could see this happening. If we set it to 40%, it would be completely hidden from view.
 - The reason that the text 'FOOTER' appears messily beneath the Sidebar is that the browser needs to show it and this is the earliest place on the page that it can fit.
 ---
 title: Clearing this problem
@@ -213,7 +211,6 @@ files:
     panel: 0
     ref: "footer {"
     lineCount: 4
-editable: true
 layout: ""
 
 ---
@@ -223,7 +220,7 @@ The `clear` CSS property specifies whether an element can be next to floating el
 
 The clear property applies to both floating and non-floating elements.
 
-When applied to non-floating blocks (in our case the Header <div>), it moves the border edge of the element down until it is below the margin edge of all relevant floats (in our case the Content and Sidebar <div>s).
+When applied to non-floating blocks (in our case the Header `<div>`), it moves the border edge of the element down until it is below the margin edge of all relevant floats (in our case the Content and Sidebar `<div>`'s).
 
 So, you should go to `main.css` and change from this
 
@@ -248,7 +245,6 @@ Now run preview and all will be well with our page. If you like, you can restore
 ---
 title: Experiment
 files: []
-editable: true
 layout: ""
 
 ---
@@ -269,7 +265,6 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -289,7 +284,6 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -299,8 +293,10 @@ There is one more thing worth pointing out that allows us to do some powerful po
 
 The `position` property allows us to adjust the way that a block displays.
 
-##position:relative
-Relative positioning allows you to adjust the positioning of a block *relative to itself*. **[Click here](open_file main.css panel=0)** to open the main.css file and see we have 
+## position:relative
+Relative positioning allows you to adjust the positioning of a block *relative to itself*. 
+
+**[Click here](open_file main.css panel=0)** to open the main.css file and see we have 
 
 ```
 #block2 {
@@ -314,7 +310,7 @@ This moves the position of the block from where the browser would normally rende
 
 If we did not specify `top` or `left` then nothing would happen of course.
 
-##position:absolute
+## position:absolute
 Absolute positioning means that we want to position the block relative to the top left of the entire page. It also takes the block out of the normal flow. We also have an example of this in `main.css`
 
 ```
@@ -327,13 +323,13 @@ Absolute positioning means that we want to position the block relative to the to
 
 **[Click here](open_preview index.html panel=0)** to preview. and you can see how this appears. Be sure to adjust the width of the preview window so you can see how the behavior changes as you resize.
 
-##position:static
+## position:static
 We don't use this, but it is the default behavior (as if we had not used `position` at all.)
 
-##position:fixed
+## position:fixed
 We don't use this in our example either, but it is a very cool feature. It will display at the position specified by top/bottom/right/left properties, no matter how you scroll or resize your browser. Try it out on block 4 for example and see what happens when you resize.
 
-##Experiment
+## Experiment
 Yet again, we ask you to experiment with `position`, `top`, `left`, `bottom` and `right` until you have the the hang of it.
 ---
 title: Another use for floating
@@ -345,7 +341,6 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -379,7 +374,6 @@ files:
     panel: 0
     ref: ""
     lineCount: 5
-editable: true
 layout: ""
 
 ---
@@ -399,10 +393,10 @@ To see how we accomplished this, **[Click here](open_file main.css panel=0)** to
 }
 ```
 
-The `.main` container is a <div> that contains all the other <div>s on our page. 
+The `.main` container is a `<div>` that contains all the other `<div>`'s on our page. 
 
 - We have set the width to be 500 pixels. This means that all child containers are now restricted to this width.
-- We also set `margin: auto;`. This tells the browser to apply margins on the left and right to be automatically set, which sets them equally based on the amount of available space between the main container and its parent, which is the <body> (the  entire browser page).
+- We also set `margin: auto;`. This tells the browser to apply margins on the left and right to be automatically set, which sets them equally based on the amount of available space between the main container and its parent, which is the `<body>` (the  entire browser page).
 
 If you narrow down the preview pane, you will see that it does not do any resizing or reflowing of the content. This is because we defined a fixed width of 500 pixels.
 
@@ -414,7 +408,6 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -424,7 +417,7 @@ If you look in the footer, you'll see that there are some icons. These are actua
 
 See how much you can understand but don't worry too much if you are a bit overwhelmed.
 
-##How it's done
+## How it's done
 We've created a list of items in the Footer section of our HTML 
 
 ```
@@ -436,9 +429,9 @@ We've created a list of items in the Footer section of our HTML
 </ul>
 ```
 
-<ul> is the 'unordered list' HTML element and <li> are the individual elements that appear within the list. Without any CSS overrides, list items appear as bullet points, but we have styled them so they appear side by side.
+`<ul>` is the 'unordered list' HTML element and `<li>` are the individual elements that appear within the list. Without any CSS overrides, list items appear as bullet points, but we have styled them so they appear side by side.
 
-Then, we've linked in an external library, which you can see in the <head> section of the HTML
+Then, we've linked in an external library, which you can see in the `<head>` section of the HTML
 
 ```
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
@@ -470,7 +463,7 @@ Finally, take a look at the way we have styled the list.
 }
 ```
 
-The first `.icons` selector relates to the <ul> element and the second one to the <li> element. 
+The first `.icons` selector relates to the `<ul>` element and the second one to the `<li>` element. 
 
 `display: inline-block;` is actually an alternative to using `float`.
 
@@ -484,15 +477,14 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: true
 layout: ""
 
 ---
 >We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Spans'. 
 
-We'll conclude this module by looking at the <span> HTML element.
+We'll conclude this module by looking at the `<span>` HTML element.
 
-Whereas a <div> is a *block* level element, the <span> is an *inline* element. This means that it does not display on a new line, rather it is displayed inline with other elements, often just text.
+Whereas a `<div>` is a *block* level element, the `<span>` is an *inline* element. This means that it does not display on a new line, rather it is displayed inline with other elements, often just text.
 
 **[Click here](open_file index.html panel=0)** to open up `index.html` and take a look at the last line of each verse.
 
@@ -507,7 +499,7 @@ Whereas a <div> is a *block* level element, the <span> is an *inline* element. T
 
 What we want to do is to style just an *inline* portion of the text so it has a different appearance to the rest.
 
-If we just included a <span> without any styling override, we'd do the following and you would not be able to notice anything different about the way it renders.
+If we just included a `<span>` without any styling override, we'd do the following and you would not be able to notice anything different about the way it renders.
 
 ```
 <span>The lamb</span> was sure to go.
@@ -534,18 +526,17 @@ files:
     panel: 0
     ref: " <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>"
     lineCount: 1
-editable: true
 layout: ""
 
 ---
 We've actually done a couple of other interesting things on this page, just for the fun of it.
 
-##Web Fonts
+## Web Fonts
 By default, browsers only know about a few basic fonts like Arial, Verdana, Times New Roman and a couple of others.
 
 *Web Fonts* is a really cool thing that lets you use fonts that are hosted on the web. One great example is [Google Web Fonts](https://www.google.com/fonts) (click the link and explore).
 
-To use a web font, we simply link to it in the <head> section of our HTML page
+To use a web font, we simply link to it in the `<head>` section of our HTML page
 
 ```
   <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
@@ -557,13 +548,13 @@ Then, in the CSS, **[Click here](open_file main.css)** we can refer to it using
 font: 30px 'Dancing Script', cursive;
 ```
 
-##Bold, Italic & Emphasized Text
+## Bold, Italic & Emphasized Text
 There are different ways to render text, all of which we have used in this example
 
-- The <b> tag is one standard way and simply bolds the text
-- The <strong> tag is another. This renders as bold but it is extremely useful for blind people as it also instructs their screen readers to change the way the text is actually spoken (it alters the tone). 
-- The <i> tag italicizes your text
-- You can also *emphasize* text using the <em> tag, which also renders it italic but the meaning is slightly different and implies it would be spoken differently. For example 'You really *should* learn to speak a foreign language'.
+- The `<b>` tag is one standard way and simply bolds the text
+- The `<strong>` tag is another. This renders as bold but it is extremely useful for blind people as it also instructs their screen readers to change the way the text is actually spoken (it alters the tone). 
+- The `<i>` tag italicizes your text
+- You can also *emphasize* text using the `<em>` tag, which also renders it italic but the meaning is slightly different and implies it would be spoken differently. For example 'You really *should* learn to speak a foreign language'.
 ---
 title: The End
 files: []
